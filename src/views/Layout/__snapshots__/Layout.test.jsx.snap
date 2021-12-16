@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Renders the header, footer, and children, and also the username if signed in 1`] = `
+<div>
+  <header>
+    <h2>
+      Guestbook
+    </h2>
+    <div
+      class="right-div"
+    >
+      (Signing as 
+      bob
+      )
+    </div>
+  </header>
+  <h1>
+    I'm a child
+  </h1>
+  <footer>
+    Footer
+  </footer>
+</div>
+`;
