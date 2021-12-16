@@ -1,0 +1,52 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Renders the Home view and adds an entry 1`] = `
+<div>
+  <div
+    class="home"
+  >
+    <form
+      class="entry-form"
+    >
+      <label>
+        Thank you for signing 
+        test name
+        . Feel free to add more entries.
+      </label>
+      <label>
+        Guest Entry
+        <textarea
+          rows="3"
+        />
+      </label>
+      <button
+        aria-label="sign"
+        type="submit"
+      >
+        Sign
+      </button>
+      <button
+        aria-label="sign-out"
+      >
+        Not 
+        test name
+        ?
+      </button>
+    </form>
+    <div>
+      <div>
+        <ul>
+          <div>
+            test entry
+            <br />
+            <em>
+              -
+              test name
+            </em>
+          </div>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+`;
