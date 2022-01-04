@@ -9,12 +9,7 @@ exports[`Renders the Home view and adds an entry 1`] = `
       class="entry-form"
     >
       <label>
-        Thank you for signing 
-        test name
-        . Feel free to add more entries.
-      </label>
-      <label>
-        Guest Entry
+        Entry
         <textarea
           rows="3"
         />
@@ -29,7 +24,6 @@ exports[`Renders the Home view and adds an entry 1`] = `
         aria-label="sign-out"
       >
         Not 
-        test name
         ?
       </button>
     </form>
@@ -41,7 +35,6 @@ exports[`Renders the Home view and adds an entry 1`] = `
             <br />
             <em>
               -
-              test name
             </em>
           </div>
         </ul>

@@ -9,12 +9,12 @@ import userEvent from '@testing-library/user-event';
 import { UserProvider, useUser } from '../../context/UserContext.jsx';
 import Layout from './Layout.jsx';
 
-let outerSetUser
+let outerSignIn
 
 function SignInMocker() {
-  const { user, setUser } = useUser()
+  const { user, signIn } = useUser()
 
-  outerSetUser = setUser;
+  outerSignIn = signIn;
 
   return <></>
 }
@@ -38,13 +38,13 @@ it('Renders the header, footer, and children, and also the username if signed in
   }, 1000);
 
   //wait until this gets set
-  while(outerSetUser === undefined) {}
+  while(outerSignIn === undefined) {}
   clearTimeout(timer)
 
-  act(() => outerSetUser({ name: 'bob'}))
+  act(() => outerSignIn('a', 'a'))
 
-  const bob = await screen.findByText(/bob/)
-  expect(bob).toBeInTheDocument()
+  const name = await screen.findByText(/a/)
+  expect(name).toBeInTheDocument()
 
   expect(container).toMatchSnapshot()
 })

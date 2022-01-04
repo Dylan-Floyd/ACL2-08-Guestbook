@@ -53,3 +53,16 @@ footer {
 .entry-form > * {
   margin: 5px;
 }
+
+.signin-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  background-color: rgb(185, 185, 185);
+  padding: 5px;
+}
+
+.signin-form > * {
+  margin: 5px;
+}

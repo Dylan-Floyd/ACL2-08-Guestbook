@@ -8,11 +8,7 @@ exports[`Renders the header, footer, and children, and also the username if sign
     </h2>
     <div
       class="right-div"
-    >
-      (Signing as 
-      bob
-      )
-    </div>
+    />
   </header>
   <h1>
     I'm a child
